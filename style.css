@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    caret-color: transparent;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    height: 75px;
+    background-color: rgba(246, 161, 161, 0.3);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(25px);
+    z-index: 2;
+}
+
+.logo-box {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1.8rem;
+}
+
+nav a:hover {
+    color: #6C15AA;
+    transition: all ease .5s;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: all ease .5s;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100%;
+    font-weight: 600;
+    font-size: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 6rem;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section1 p span {
+    color: #6C15AA;
+}
+
+#section1 a {
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1.8rem;
+    background-color: #6C15AA;
+    font-size: 1.2rem;
+    line-height: normal;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10rem;
+    padding: 3rem 20rem;
+    background-color: #FFF7F7;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftbox h1 {
+    font-size: 3.5rem;
+    color: #F6A1A1;
+}
+
+.socmed-icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.socmed-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #F6A1A1;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socmed-box svg{
+    filter: invert(95%) sepia(2%) saturate(1087%) hue-rotate(314deg) brightness(102%) contrast(103%);
+    scale: 0.6;
+}
+
+.rightbox {
+    width: 18rem;
+    height: 25rem;
+    background-color: black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.rightbox img {
+    width: 19rem;
+    position: relative;
+    z-index: 1;
+}
+
+.rightbox div {
+    position: absolute;
+    z-index: -1;
+    height: 27rem;
+    width: 8rem;
+    background: #F6A1A1;
+}
+
+
+
+.section4 {
+    padding: 2rem 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portbox {
+    width: 22.5rem;
+    height: 30 rem;
+    background-color: white;
+    border-radius: 1.6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 7px 6px 17.4px -1px rgba(0, 0, 0, 0.20);
+}
+
+.portbox h1 {
+    font-weight: 500;
+    margin-top: .7rem;
+    font-size: 1.6rem;
+}
+
+.portbox p {
+    font-size: .9rem;
+    color: rgb(104, 104, 104);
+}
+
+.portbox a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #6C15AA;
+    padding: .6rem 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.portcontainer {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.image-port {
+    background-color: gray;
+    border-radius: 1.3rem;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.section3 {
+    padding: 2rem 20rem;
+    background-color: #FFF7F7;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill> p {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+}
+
+.hard-container > p , .soft-container > p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #F6A1A1;
+}
+
+.skillbar-box {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skillbar-meter p {
+    font-size: 0.8rem;
+    color: #5B5B5B;
+}
+
+.skillbar-meter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3rem;
+}
+
+.skillbar-list {
+    width: 36rem;
+    height: 0.7rem;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+
+.skillbar-isi {
+    width: 60%;
+    height: 100%;
+    background-color: #6C15AA;
+    border-radius: 25px;
+}
+
+.skillbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillbar {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.pengalaman > p {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: 600;
+}
+
+.xp-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #6C15AA;
+    border-radius: 11px 0px 11px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xp-logo svg {
+    scale: 0.7;
+    filter: invert(95%) sepia(2%) saturate(1087%) hue-rotate(314deg) brightness(102%) contrast(103%);
+}
+
+.xp-logo-box {
+    display: flex;
+    gap: .7rem;
+}
+
+.xp-title h5{
+    font-weight: 300;
+    background-color: #E9CEFC;
+    border-radius: 0px 6px 6px 6px;
+    width: 70%;
+    padding-left: .5rem;
+    padding: .2rem 0 .2rem 0 .2rem;
+    font-size: medium;
+}
+
+.xp-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.xp-all-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.upper-text > h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 0px;
+}
+
+.upper-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 20rem;
+    background-color: #FFF7F7;
+}
+
+.socmed-box-5 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.socmed-item-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.socmed-item-5 svg:hover {
+    filter: invert(10%) sepia(93%) saturate(3792%) hue-rotate(272deg) brightness(110%) contrast(102%);
+    transition: ease-in-out .3s;
+}
+
+
+.section5 > .upper-text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.section5 form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+input {
+    border: none;
+    background-color: #E3E3E3;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+input[type="submit"] {
+    background-color: #6C15AA;
+    color: white;
+}
+
+input[type="textarea"] {
+    padding-bottom: 10rem;
+}
+
+footer {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF7F7;
+}
+
+.bot-port-box {
+    margin-bottom: 2rem;
+}
+
+.image-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.image-port img:hover {
+    scale: 1.5;
+    transition: all ease 1s;
+}
